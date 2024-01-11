@@ -24,8 +24,8 @@ def draw_plots(chart):
     plt.xlabel(chart.legend_x, fontsize=15)
     plt.ylabel(chart.legend_y, fontsize=15)
     plt.legend()
-    plt.show()
     plt.savefig(chart.filename)
+    plt.show()
 
 
 df = pd.read_json('deviation.json')
